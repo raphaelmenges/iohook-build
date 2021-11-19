@@ -39,12 +39,6 @@
   "bugs": {
     "url": "https://github.com/wilix-team/iohook/issues"
   },
-  "dependencies": {
-    "nugget": "^2.0.1",
-    "pump": "^1.0.3",
-    "rc": "^1.2.8",
-    "tar-fs": "^1.16.3"
-  },
   "description": "Node.js global keyboard and mouse hook",
   "devDependencies": {
     "@types/node": "^7.0.62",
@@ -117,7 +111,7 @@
     "docs:build": "vuepress build docs",
     "docs:deploy": "npm run docs:build && gh-pages -d docs/.vuepress/dist/",
     "docs:dev": "vuepress dev docs",
-    "install": "node install.js",
+    "install": "",
     "lint:dry": "eslint --ignore-path .lintignore .",
     "lint:fix": "eslint --ignore-path .lintignore --fix . && prettier --ignore-path .lintignore --write .",
     "test": "jest"
