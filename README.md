@@ -34,7 +34,7 @@ More prebuilt binaries can be added like the following:
 1. Execute "node build.js --runtime electron --version 15.3.1 --abi 98". I took the Electron version from the `package.lock` of my target project and the ABI version from the earlier error statement. See <https://wilix-team.github.io/iohook/manual-build.html#building-for-specific-versions-of-node> for details.
 1. Put `iohook.node` and `uihook.dll` (or `.so` or `.dylib`, depending on your operating system) into the `builds` directory as expected by iohook. See again the error message for details about the directory structure.
 
-I assume one needs a proper development environment to build the binaries. For me it worked out of the box, so I assume on needs at least Visual Studio 2017 on Windows and Xcode command line tools on macOS.
+I assume one needs a proper development environment to build the binaries. For me it worked out of the box, so I guess one needs at least Visual Studio 2017 on Windows and Xcode command line tools on macOS.
 
 ## License
 
