@@ -31,7 +31,7 @@ More prebuilt binaries can be added like the following:
 1. Add this module to your target project as described above.
 1. Run your target project and inspect an error stating that the prebuilt binary is not found, e.g.: `UnhandledPromiseRejectionWarning: Error: Cannot find module 'app\node_modules\iohook\builds\electron-v98-win32-x64\build\Release\iohook.node'`
 1. Clone the iohook repository in version 0.9.3 onto your system: <https://github.com/wilix-team/iohook/tree/v0.9.3>
-1. Execute "node build.js --runtime electron --version 15.3.1 --abi 98". I took the Electron version from the `package.lock` of my target project and the ABI version from the earlier error statement. See <https://wilix-team.github.io/iohook/manual-build.html#building-for-specific-versions-of-node> for details.
+1. Execute "npm install" and "node build.js --runtime electron --version 15.3.1 --abi 98". I took the Electron version from the `package.lock` of my target project and the ABI version from the earlier error statement. See <https://wilix-team.github.io/iohook/manual-build.html#building-for-specific-versions-of-node> for details.
 1. Put `iohook.node` and `uihook.dll` (or `.so` or `.dylib`, depending on your operating system) into the `builds` directory as expected by iohook. See again the error message for details about the directory structure.
 
 I assume one needs a proper development environment to build the binaries. For me it worked out of the box, so I guess one needs at least Visual Studio 2017 on Windows and Xcode command line tools on macOS.
